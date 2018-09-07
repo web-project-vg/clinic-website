@@ -72,7 +72,13 @@
         <li class="ml-lg-7"><a href="#" style="color: white;"><span class="glyphicon glyphicon-camera  
           "></span> Gallery</a></li>
         <li class="ml-lg-7"><a href="#" style="color: white;"><span class="glyphicon glyphicon-user"></span> Testimonials</a></li>
-        <li class="ml-lg-7"><a href="#" style="color: white;"><span class="glyphicon glyphicon-log-in"></span> Contact US</a></li>
+        <li class="ml-lg-7"><a href="#" style="color: white;"><span class="glyphicon glyphicon-phone"></span> Contact US</a></li>
+        <li class="ml-lg-7">
+          <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</button>
+          <button type="button" class="btn btn-basic" data-toggle="modal" data-target="#signup">Sign up</button>
+          </div>
+        </li>
       </ul>
     </div>
     </nav>
@@ -94,7 +100,7 @@
 
           <!-- Book Appointment -->
         <span style="z-index: 1000;">
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popup">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookappointment">
             Book Appointment
           </button>
         </span>
@@ -109,7 +115,7 @@
         <img src="Images/slider/2.jpg" alt="Chicago" style="width:100%;">
         <div class="carousel-caption">
           <span style="z-index: 1000;">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popup">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookappointment">
               Book Appointment
             </button>
           </span>
@@ -121,7 +127,7 @@
         <img src="Images/slider/3.jpg" alt="New York" style="width:100%;">
         <div class="carousel-caption">
           <span style="z-index: 1000;">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popup">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookappointment">
               Book Appointment
             </button>
           </span>
@@ -147,8 +153,72 @@
   </div> 
 </div>
 
+
+<!--Login popup-->
+<div class="modal fade" id="login" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body" style="z-index: 1000px;">
+        <form name="loginform">
+          <div class="form-group">
+            <label for="no">Patient no./Email</label>
+            <input type="text" id="no" class="form-control" placeholder="enter patient no/email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="enter password">
+            <a href="#"><p class="form-control-note">Forgot password?</p></a>
+          </div>
+        </form>
+        <button type="submit" class="btn btn-success" onclick="login()">Login</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="close2">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--signup popup-->
+<div class="modal fade" id="signup" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Sign up</h4>
+      </div>
+      <div class="modal-body" style="z-index: 1000px;">
+        <form name="Appoitment">
+          <div class="form-group">
+            <label for="name">Patient no</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter the patient no">
+          </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input type="text" id="name" class="form-control" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input type="text" id="name" class="form-control" placeholder="create a password">
+            <p class="form-control-note">use at least one letter, one numeral, and seven characters.</p>
+          </div>
+        </form>
+        <button type="submit" class="btn btn-success">Login</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Book Appointment -->
-<div class="modal fade" id="popup" role="dialog">
+<div class="modal fade" id="bookappointment" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -156,21 +226,21 @@
         <h4 class="modal-title">Book Appoitment Here!!!</h4>
       </div>
       <div class="modal-body" style="z-index: 1000px;">
-        <form name="Appoitment">
+        <form name="appointment">
           <div class="form-group">
             <label for="name">Name: </label>
             <input type="text" id="name" class="form-control" placeholder="Enter your name">
           </div>
           <div class="form-group">
-            <label for="name">Address: </label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your email address">
+            <label for="phone">Phone no.: </label>
+            <input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
           </div>
           <div class="form-group">
-            <label for="name">Phone no.: </label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your phone number">
+            <label for="email">Email: </label>
+            <input type="text" id="email" class="form-control" placeholder="Enter your email address">
           </div>
           <div class="form-group">
-            <label for="name">Type of case: </label>
+            <label for="case">Type of case: </label>
               <div class="form-check">
                 <label class="form-check-label" for="radio1">
                   <input type="radio" class="form-check-input" id="radio1" name="typeofcase"> New
@@ -183,10 +253,10 @@
               </div>
           </div>
         </form>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="checkform()">Submit</button>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="close1">Close</button>
       </div>
     </div>
   </div>
@@ -302,5 +372,7 @@
       </div>
     </div>
   </div>
+
+<script type="text/javascript" src="js/validation.js"></script>
 </body>
 </html>
