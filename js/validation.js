@@ -14,43 +14,6 @@ function checkform()
 		alert("Please Enter Your Phone no.");
 		document.appointment.phone.focus();
 	}
-	else if(email != '')
-	{		
-		var len,lat,dot,i,d=0,c=0;
-		len=email.length; 
-		for(i=0;i<len;i++) 
-		{
-			if(email.charAt(i)=='@')
-			{
-				c++;
-			}
-			else if(email.charAt(i)=='.')
-			{
-				d++;
-			}
-		}		
-		if(c==1 && d>=1)
-		{
-			lat=email.indexOf('@');
-			dot=email.indexOf('.');
-			if(lat==0)
-			{
-				alert("Please Enter valid Email address");
-			}
-			else if(dot-lat<2)
-			{
-				alert("Please Enter valid Email address");
-			}
-			else if(len-dot<2)
-			{
-				alert("Please Enter valid Email address");
-			}
-		}
-		else
-		{
-			alert("Please Enter valid Email address	");
-		}
-	}
 	// add radio button
 	else
 	{
@@ -76,6 +39,41 @@ function login()
 	else
 	{
 		document.getElementById("close2").click();	
+	}	
+}
+
+function signup()
+{
+	var no1 = document.signupform.no.value;
+	var pass1 = document.signupform.pass1.value;
+	var pass2 = document.signupform.pass2.value;
+	if(no1 == '') 
+	{
+		alert("please enter patient no./Email");
+		document.signupform.no1.focus();
 	}
-	
+	else if(pass1 == '') 
+	{
+		alert("please enter password");
+		document.signupform.pass1.focus();
+	}
+	else if(pass2 == '')
+	{
+		alert("please re-enter password");
+		document.signupform.pass2.focus();
+	}
+	else if(pass1.length()<6 || pass1.length()<6)
+	{
+		alert("your password length must be atleast 6");
+	}
+
+	else if(pass1 != pass2)
+	{
+		alert("both the passwords are not equal");
+		document.signupform.pass2.focus();
+	}
+	else
+	{
+		document.getElementById("close3").click();	
+	}	
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Dr. Arth's Dental clinic</title>
   <meta charset="utf-8">
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -165,8 +165,8 @@
       <div class="modal-body" style="z-index: 1000px;">
         <form name="loginform">
           <div class="form-group">
-            <label for="no">Patient no./Email</label>
-            <input type="text" id="no" class="form-control" placeholder="enter patient no/email">
+            <label for="no">Patient no.</label>
+            <input type="text" id="no" class="form-control" placeholder="enter patient no.">
           </div>
           <div class="form-group">
             <label for="password">Password</label>
@@ -193,25 +193,25 @@
         <h4 class="modal-title">Sign up</h4>
       </div>
       <div class="modal-body" style="z-index: 1000px;">
-        <form name="Appoitment">
+        <form name="signupform">
           <div class="form-group">
-            <label for="name">Patient no</label>
-            <input type="text" id="name" class="form-control" placeholder="Enter the patient no">
+            <label for="no">Patient no</label>
+            <input type="text" id="no" class="form-control" placeholder="Enter the patient no">
           </div>
           <div class="form-group">
-            <label for="name">Email</label>
-            <input type="text" id="name" class="form-control" placeholder="you@example.com">
+            <label for="pass1">Password</label>
+            <input type="password" id="pass1" class="form-control" placeholder="create a password">
+            <p class="form-control-note">length of password must be atleast 6</p>
           </div>
           <div class="form-group">
-            <label for="name">Password</label>
-            <input type="text" id="name" class="form-control" placeholder="create a password">
-            <p class="form-control-note">use at least one letter, one numeral, and seven characters.</p>
+            <label for="pass">re-enter Password</label>
+            <input type="password" id="pass2" class="form-control" placeholder="re-enter password">
           </div>
         </form>
-        <button type="submit" class="btn btn-success">Login</button>
+        <button type="submit" class="btn btn-success" onclick="signup()">Signup</button>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" name="close3">Close</button>
       </div>
     </div>
   </div>
@@ -234,10 +234,6 @@
           <div class="form-group">
             <label for="phone">Phone no.: </label>
             <input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
-          </div>
-          <div class="form-group">
-            <label for="email">Email: </label>
-            <input type="text" id="email" class="form-control" placeholder="Enter your email address">
           </div>
           <div class="form-group">
             <label for="case">Type of case: </label>
