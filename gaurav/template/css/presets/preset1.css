@@ -1,0 +1,226 @@
+a {
+  color: #11c0b4;
+}
+a:hover {
+  color: #0e9cd1;
+}
+.sp-megamenu-parent >li.active>a,
+.sp-megamenu-parent >li:hover>a {
+  color: #11c0b4;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
+  background: #11c0b4;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
+  color: #11c0b4;
+}
+#offcanvas-toggler >i {
+  color: #FFF;
+}
+#offcanvas-toggler >i:hover {
+  color: #11c0b4;
+}
+.projects-filter a.selected, .projects-filter a.selected:hover,
+.btn-primary,
+.sppb-btn-primary {
+  background-color: #11c0b4;
+}
+.btn-primary:hover,
+.sppb-btn-primary:hover {
+  border-color: #11c0b4;
+  background-color: #0e9cd1;
+}
+ul.social-icons >li a:hover {
+  color: #11c0b4;
+}
+.sp-page-title {
+  background: #11c0b4;
+}
+.layout-boxed .body-innerwrapper {
+  background: #ffffff;
+}
+.sp-module ul >li >a {
+  color: #333;
+}
+.sp-module ul >li >a:hover {
+  color: #11c0b4;
+}
+.sp-module .latestnews >div >a {
+  color: #000000;
+}
+.sp-module .latestnews >div >a:hover {
+  color: #11c0b4;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #11c0b4;
+}
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+  background: #11c0b4;
+}
+.search .btn-toolbar button {
+  background: #11c0b4;
+}
+.post-format {
+  background: #11c0b4;
+}
+.voting-symbol span.star.active:before {
+  color: #11c0b4;
+}
+.sp-rating span.star:hover:before,
+.sp-rating span.star:hover ~ span.star:before {
+  color: #0e9cd1;
+}
+.entry-link,
+.entry-quote {
+  background: #11c0b4;
+}
+blockquote {
+  border-color: #11c0b4;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background: #11c0b4;
+}
+#sp-footer {
+  background: #11c0b4;
+}
+.sp-comingsoon body {
+  background-color: #11c0b4;
+}
+.pagination>li>a,
+.pagination>li>span {
+  color: #000000;
+}
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus {
+  color: #000000;
+}
+.pagination>.active>a,
+.pagination>.active>span {
+  border-color: #11c0b4;
+  background-color: #11c0b4;
+}
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus {
+  border-color: #11c0b4;
+  background-color: #11c0b4;
+}
+#et-text1,
+.at-title h6,
+.at-slider .tp-caption:hover a,
+.at-intro-item:hover i,
+.at-feature-item:hover i,
+.at-portfolio-button:hover,
+.at-action-button:hover,
+.at-table-item:hover button,
+.at-team-item .qx-person-img:before {
+  background: #11c0b4;
+}
+.at-intro-item i,
+.at-feature-item h4,
+.at-table-item h3,
+.at-table-item .table-price .price,
+.at-table-item button:hover a,
+.at-testimonial p.qx-designation,
+.at-testimonial button,
+.at-team-item h4 {
+  color: #11c0b4; 
+}
+.at-feature-item:hover i,
+.at-portfolio-button:hover,
+.at-action-button:hover,
+.at-table-item:hover,
+.at-pricing .single-table,
+.at-slider .tp-caption:hover a,
+.at-table-item button,
+.at-subscribe-content table .button:hover {
+  border-color: #11c0b4!important;
+}
+/* Important */
+.at-pricing .table-heading .title,
+.at-services-item:hover i,
+.at-title-general h3,
+.at-services-item:hover h4,
+.at-action-button:hover,
+.at-features-item:hover i,
+.tp-caption .excerpt,
+.at-services-item i,
+.at-title b,
+.at-service-bottom-item i,
+.et-features-item i,
+#at-download-button:hover,
+.at-enroll-item i,.at-pricing .single-table .table-heading .cost .curency,
+.at-pricing .single-table .table-heading .cost .amount,
+.at-about-item i,
+#et-service .at-service-item i,
+.at-about-item .qx-btn-default {
+  color: #11c0b4!important; 
+}
+.at-contact #sp-quickcontact-form .button:hover,
+#et-service-sub:hover,
+.at-courses-sub,
+.at-title hr,
+.at-service-item:hover,
+#at-counter-sub:hover,
+.at-counter-item i:hover,
+.at-title-left h6,
+.at-subscribe-content table .button:hover {
+  background: #11c0b4!important;  
+}
+.at-service-bottom-item1 {
+  background: rgba(17, 192, 180, 0.73)!important;
+}
+.at-contact-form button:hover,
+.qx-progress-bar,
+.at-service-item,
+.at-title hr,
+.projects-filter a.selected,
+.projects-filter a:hover,
+.at-about-item:hover i,
+.at-pricing .table-footer,
+.at-contact-form button,
+#et-something-button,
+.at-service-bottom-item1,
+#et-drop-cap,
+.at-sub-build-item:hover {  
+  background-color:#11c0b4!important;
+}
+.et-service-button,
+.at-contact #sp-quickcontact-form .button:hover,
+.btn-primary,
+.at-client-item,
+.at-features-item i,
+.at-features-item-left i,
+.at-customzable-item i,
+.at-service-item i,
+.at-service-bottom-item i,
+.at-service-bottom-item i,
+.at-features-item i,
+.at-features-item:hover i,
+.at-pricing .single-table,
+.at-about-item .qx-btn-default {
+  border-color:#11c0b4!important; 
+}
+
+.at-about-item .qx-element-image:before {
+  border:7px solid #11c0b4;
+}
+.projects-wrapper .project-img .project-img-extra {
+    background-image: -webkit-linear-gradient(top , rgba(17, 192, 180, 0.51) 0%, rgba(17, 192, 180, 0.51) 100%)!important;
+}
+.at-service-bottom-item i,
+.at-service-item i,
+.at-customzable-item i {
+      box-shadow: 5px 5px 0 0 #11c0b4!important;
+}
+.at-features-item i {
+      box-shadow: 5px 5px 0 0 #11c0b4!important;
+}
+.at-features-item-left i {
+    box-shadow: -6px 7px 0px 0px #11c0b4!important;
+}
