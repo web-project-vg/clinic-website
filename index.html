@@ -115,8 +115,6 @@
             </a></li>
           </ul>
         </li>
-        <li class="ml-lg-7 drop"><a href="#" style="color: white;"><span class="glyphicon glyphicon-camera  
-          "></span> Gallery</a></li>
         <li class="ml-lg-7 drop"><a href="#" style="color: white;"><span class="glyphicon glyphicon-comment"></span> Testimonials</a></li>
         <li class="ml-lg-7 drop"><a href="#" style="color: white;"><span class="glyphicon glyphicon-phone"></span> Contact US</a></li>
         <li class="ml-lg-7">
@@ -144,12 +142,8 @@
         <img src="Images/slider/1.jpg" alt="Los Angeles" style="width:100%;">
         <div class="carousel-caption">
 
-          <!-- Book Appointment -->
-        <span style="z-index: 1000;">
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookappointment">
-            Book Appointment
-          </button>
-        </span>
+          
+        
 
           <p>Your care our responsibility</p>
 
@@ -160,11 +154,7 @@
       <div class="item">
         <img src="Images/slider/2.jpg" alt="Chicago" style="width:100%;">
         <div class="carousel-caption">
-          <span style="z-index: 1000;">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookappointment">
-              Book Appointment
-            </button>
-          </span>
+         
           <p>Your care our responsibility</p>
         </div>
       </div>
@@ -172,11 +162,6 @@
       <div class="item">
         <img src="Images/slider/3.jpg" alt="New York" style="width:100%;">
         <div class="carousel-caption">
-          <span style="z-index: 1000;">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bookappointment">
-              Book Appointment
-            </button>
-          </span>
           <p>Your care our responsibility</p>
         </div>
       </div>
@@ -220,7 +205,7 @@
             <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
             <a href="#"><p class="form-control-note">Forgot password?</p></a>
           </div>
-          <input type="submit" class="btn btn-success" value="Login">
+          <input type="submit" class="btn btn-success" value="Login" name="login">
         </form>
         
       </div>
@@ -275,65 +260,7 @@
   </div>
 </div>
 
-<!-- Book Appointment -->
-<div class="modal fade" id="bookappointment" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Book Appoitment Here!!!</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        
-      </div>
-      <div class="modal-body" style="z-index: 1000px;">
-        <form name="appointment" action="php1.php" method="post">
-          <div class="form-group">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone no.: </label>
-            <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" onblur="phonevalidate(this)">
-          </div>
-          <div class="form-group">
-            <label for="treatment">Treatment :  </label>&nbsp;&nbsp;&nbsp;
-              <select name="treatment" id="treatment">
-                <option value="Tooth Implant">Tooth Implant</option>
-                <option value="Tooth Filling">Tooth Filling</option>
-                <option value="Tooth Cleaning">Tooth Cleaning</option>
-                <option value="Aesthetic Filling">Aesthetic Filling</option>
-                <option value="Crowns">Crowns</option>
-                <option value="Dentures">Dentures</option>
-                <option value="Painless Tooth Removal">Painless Tooth Removal</option>
-                <option value="Pediatric Dentistry">Pediatric Dentistry</option>
-                <option value="Orthodontic Treatement">Orthodontic Treatement</option>
-              </select>
-          </div>
-          <div class="form-group">
-            <label for="case">Type of case: </label>
-              <div class="form-check">
-                <label class="form-check-label" for="radio1">
-                  <input type="radio" class="form-check-input" id="radio1" name="typeofcase" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New case
-                </label>
-              </div>
-              <div class="form-check">
-                <label class="form-check-label" for="radio2">
-                  <input type="radio" class="form-check-input" id="radio2" name="typeofcase"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;old case
-                </label>
-              </div>
-          </div>
-          <div class="form-group">
-            <label for="date">Date </label>
-            <input type="date" id="date" name="date" class="form-control" onblur="phonevalidate(this)">
-          </div>
-          <input type="submit" class="btn btn-primary" value="Submit">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="close1">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 <!--About us-->
